@@ -1,38 +1,303 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Common styles for both desktop and mobile views */
+.header {
+  flex-wrap: wrap;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px solid black;
+  margin-top: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  background:linear-gradient(
+    to right,
+    #FF6347 0%,
+    #FF6347 20%,
+    #FFA500 50%,
+    #FFA500 100%
+  );
 }
 
-.App-link {
-  color: #61dafb;
+.logo-container {
+  margin-left: 15px;
+}
+.logouticon{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Rslogo {
+  width: 30%;
+}
+
+.nav-items {
+  padding: 0px 20px;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 5px;
+  list-style: none;
+  list-style-type: none;
+}
+
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
+}
+
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card {
+  cursor: pointer;
+  font-size: small;
+  width: 252px;
+  height: 250px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  text-align: center;
+  background:linear-gradient(
+    to left,
+    #FF6347 0%,
+    #FF6347 15%,
+    #FFA500 40%,
+    #FFA500 20%
+  );
+}
+
+.branchImg {
+  width: 250px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.bgCard {
+  /* background-image: url("https://wallpapercave.com/wp/wp10821217.jpg"); */
+
+  margin-top: 2px;
+  /* height: 100rem; */
+}
+
+.branchHeading {
+  text-align: center;
+  color: black;
+  border: 1px solid;
+  /* margin: 30px; */
+  background-color: #a2a2d0;
+}
+
+.enquiryCard,
+.markAttendence,
+.EnquiryByName,
+.EnquiryDetails,
+.EnquiryById,
+.BranchFormCard {
+  width: 300px;
+  height: 300px;
+  background-color: #7c7d7d;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  text-align: center;
+  background:linear-gradient(
+    to left,
+    #FF6347 0%,
+    #FF6347 15%,
+    #FFA500 40%,
+    #FFA500 20%
+  );
+}
+
+.btnforAll,
+.btnforMark {
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  height: 2rem;
+  color: #338bd2;
+  cursor: pointer;
+}
+
+.inputField {
+  margin-top: 2rem;
+}
+
+/* About Us css */
+main {
+  padding: 2rem;
+}
+
+.about-section {
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.about-content p {
+  color: #666;
+}
+
+.about-content h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.about-content ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+.team-member {
+  margin: 1rem 0;
+}
+
+.team-member img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.team-member h4 {
+  margin: 0.5rem 0;
+}
+
+.team-member p {
+  color: #666;
+}
+
+/* Contact us css */
+/* Add your styles here. Customize the styles as needed. */
+.contact-us-container {
+  padding: 20px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-info {
+  max-width: 500px;
+}
+
+.map-container {
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.contact-info h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 5px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin-bottom: 5px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer css */
+/* Add your styles here. Customize the styles as needed. */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  margin-top: 20rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer h2 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 5px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
 }
