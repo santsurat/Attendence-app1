@@ -25,7 +25,7 @@ const SewaAttendence = () => {
     <>
       <div className="bgCard">
         <div className="branchHeading">
-          <h1 style={{fontSize:'48px'}}>Branch SewaAttendence</h1>
+          <h1 style={{fontSize:'38px'}}>Branch SewaAttendence</h1>
         </div>
         <div style={{ display: "flex", flexWrap: "wrap" }}>
           <div className="enquiryCard">

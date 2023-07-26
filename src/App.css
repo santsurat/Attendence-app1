@@ -4,10 +4,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
-  margin-top: 5px;
-  margin-left: 2px;
-  margin-right: 2px;
   background:linear-gradient(
     to right,
     #FF6347 0%,
@@ -76,22 +72,26 @@
 }
 
 .branchImg {
-  width: 250px;
+  width: 251px;
   height: 150px;
   border-radius: 8px;
 }
 
-.bgCard {
-  /* background-image: url("https://wallpapercave.com/wp/wp10821217.jpg"); */
-
-  margin-top: 2px;
-  /* height: 100rem; */
+.bgCard{
+  background-image:  url('https://wallpapercave.com/wp/wp12407567.jpg');
+  min-height: 100vh;
+  /* min-Width: 100vw; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .branchHeading {
   text-align: center;
-  color: black;
-  border: 1px solid;
+  /* color: black;
+  border: 1px solid; */
   /* margin: 30px; */
   background-color: #a2a2d0;
 }
@@ -262,7 +262,7 @@ main {
   background-color: #333;
   color: #fff;
   padding: 20px;
-  margin-top: 20rem;
+  margin-top: 0.1rem;
 }
 
 .footer-content {

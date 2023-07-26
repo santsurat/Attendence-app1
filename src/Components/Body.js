@@ -4,7 +4,8 @@ import Sewa from '../../src/assets/Image/Sewa.jpg';
 import Branch from '../../src/assets/Image/Branch.jpg';
 import Field from '../../src/assets/Image/Field.jpg';
 import { useNavigate } from 'react-router-dom';
-import bgimg from '../assets/Image/3dpng.webp'
+import bgimg from '../assets/Image/3dpng.webp';
+import '../App.css';
 
 
 const Body = () => {

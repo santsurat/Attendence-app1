@@ -26,7 +26,7 @@ const FieldAttendence = () => {
     <>
       <div className="bgCard">
         <div className="branchHeading">
-          <h1 style={{fontSize:'48px'}}>FieldAttendence</h1>
+          <h1 style={{fontSize:'38px'}}>FieldAttendence</h1>
         </div>
         <div style={{ display: "flex", flexWrap: "wrap" }}>
           <div className="enquiryCard">
