@@ -11,13 +11,6 @@ const AboutSection = () => {
         <p>Since our establishment in 2021, we have been striving to...</p>
         <p>At [Work From Home], we strongly believe in...</p>
 
-        <h3>Our Values</h3>
-        <ul>
-          <li>Value 1</li>
-          <li>Value 2</li>
-          <li>Value 3</li>
-          {/* Add more values as needed */}
-        </ul>
 
         <h3>Meet the Team</h3>
         <div className="team-member">

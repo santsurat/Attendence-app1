@@ -69,14 +69,14 @@ const DashboardPage = () => {
       <div className="nav-items">
         <ul>
           <li>
-        <Link style={{textDecoration:'none'}} to="/"  >{<HomeIcon fontSize="large" titleAccess="Home"/>}</Link>
+        <Link style={{textDecoration:'none'}} to="/"  >{<HomeIcon fontSize="large" titleAccess="Home" color="disabled"/>}</Link>
           </li>
         
           <li>
-            <Link to="About" style={{textDecoration:'none'}}>{<PsychologyAltIcon fontSize="large" titleAccess="About Us"/>}</Link>
+            <Link to="About" style={{textDecoration:'none'}}>{<PsychologyAltIcon fontSize="large" titleAccess="About Us" color="disabled"/>}</Link>
           </li>
           <li>
-            <Link to="Contact" style={{textDecoration:'none'}}>{<ContactPageIcon fontSize="large" titleAccess="Contact Us"/>}</Link>
+            <Link to="Contact" style={{textDecoration:'none'}}>{<ContactPageIcon fontSize="large" titleAccess="Contact Us" color="disabled"/>}</Link>
           </li>
           <Box sx={{ flexGrow: 0,}}>
             <Tooltip title="Profile">

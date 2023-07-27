@@ -80,12 +80,8 @@
 .bgCard{
   background-image:  url('https://wallpapercave.com/wp/wp12407567.jpg');
   min-height: 100vh;
-  /* min-Width: 100vw; */
   background-size: cover;
   background-repeat: no-repeat;
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .branchHeading {
@@ -138,7 +134,10 @@ main {
 }
 
 .about-section {
-  margin-bottom: 2rem;
+  background-image:  url('https://wallpapercave.com/wp/wp12407567.jpg');
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .about-content {
@@ -185,6 +184,10 @@ main {
 /* Contact us css */
 /* Add your styles here. Customize the styles as needed. */
 .contact-us-container {
+  background-image:  url('https://wallpapercave.com/wp/wp12407567.jpg');
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 20px;
 }
 
