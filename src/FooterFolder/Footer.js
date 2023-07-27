@@ -28,7 +28,7 @@ const Footer = () => {
         
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Sant Surat,Inc</p>
+        <p>&copy; {new Date().getFullYear()} Attendence Management System,Inc.</p>
         <p><a href="/privacy" style={{color:'white'}}>Privacy Policy</a> | <a href="/terms" style={{color:'white'}}>Terms of Use</a></p>
       </div>
     </footer>
