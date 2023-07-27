@@ -81,7 +81,7 @@ const DashboardPage = () => {
           <Box sx={{ flexGrow: 0,}}>
             <Tooltip title="Profile">
               <IconButton onClick={handleOpenUserMenu} sx={{ fontSize:'large',mt:0.5 }}>
-                <Avatar sx={{marginLeft:"1rem"}} alt="Remy Sharp" src={icon} />
+                <Avatar sx={{marginLeft:"0.5rem"}} alt="Remy Sharp" src={icon} />
               </IconButton>
             </Tooltip>
             <Menu
