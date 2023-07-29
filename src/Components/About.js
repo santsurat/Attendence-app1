@@ -14,7 +14,7 @@ const AboutSection = () => {
 
         <h3>Meet the Team</h3>
         <div className="team-member">
-          <img  alt="Team Member 1 " />
+          <p>Team Member</p>
           <h4>Uday Pratap Singh</h4>
           <h4>Rohit Kumar</h4>
           <h4>Sant Surat</h4>
