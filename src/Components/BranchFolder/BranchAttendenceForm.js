@@ -73,6 +73,9 @@ const BranchAttendenceForm = (props) => {
   return (
     <>
       <Dialog open={dialogOpen} >
+      <div style={{backgroundColor: "blue",display : "flex",justifyContent : "end"}}>
+      <CloseIcon style={{top : 0,cursor : "pointer",color : "wheat"}}onClick={() => dialogClose(false)} />
+        </div>
         <DialogContent
           sx={{
             textAlign: "center",
@@ -81,8 +84,8 @@ const BranchAttendenceForm = (props) => {
             fontSize: "large",
           }}
         >
-          BranchAttendenceForm
-          <CloseIcon  onClick={() => dialogClose(false)}/>
+          Branch Attendence Form
+     
         </DialogContent>
         <Box flexDirection={"row"} marginLeft={1.9}>
           <FormControlLabel

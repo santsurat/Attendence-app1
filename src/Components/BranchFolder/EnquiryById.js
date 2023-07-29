@@ -15,8 +15,8 @@ const EnquiryById = (props) => {
   const { dialogOpen, dialogClose } = props;
   const [box1, setBox1] = useState(false);
   const [box2, setBox2] = useState(false);
-  const [branchNumber, setBranchNumber] = useState("");
-  const [uidNumber, setuidNumber] = useState("");
+  // const [branchNumber, setBranchNumber] = useState("");
+  // const [uidNumber, setuidNumber] = useState("");
 
   const handleCheckbox1 = () => {
     if (!box1) {
@@ -35,6 +35,9 @@ const EnquiryById = (props) => {
   return (
     <>
       <Dialog open={dialogOpen} fullWidth>
+      <div style={{backgroundColor: "blue",display : "flex",justifyContent : "end"}}>
+      <CloseIcon style={{top : 0,cursor : "pointer",color : "wheat"}}onClick={() => dialogClose(false)} />
+        </div>
         <DialogContent
           sx={{
             textAlign: "center",
@@ -44,8 +47,7 @@ const EnquiryById = (props) => {
           }}
          
         >
-          EnuiryById
-          <CloseIcon  onClick={() => dialogClose(false)} />
+          Enuiry By Id
         </DialogContent>
         <Box flexDirection={"row"} alignSelf={"center"}>
           <FormControlLabel

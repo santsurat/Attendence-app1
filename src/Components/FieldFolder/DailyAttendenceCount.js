@@ -8,7 +8,10 @@ const DailyAttendenceCount = (props) =>{
   return(
     <>
     <Dialog open={dialogOpen} >
-      <DialogContent sx={{textAlign:'center',backgroundColor:'blue',color:'white',fontSize:'large'}} >DailyAttendenceCount <CloseIcon onClick={() => dialogClose(false)}/></DialogContent>
+    <div style={{backgroundColor: "blue",display : "flex",justifyContent : "end"}}>
+      <CloseIcon style={{top : 0,cursor : "pointer",color : "wheat"}}onClick={() => dialogClose(false)} />
+        </div>
+      <DialogContent sx={{textAlign:'center',backgroundColor:'blue',color:'white',fontSize:'large'}} >Daily Attendence Count </DialogContent>
        <Box>
         <Typography variant="h5" sx={{mr:3,ml:3}}>Morning Attendence : 0 </Typography>
        </Box>

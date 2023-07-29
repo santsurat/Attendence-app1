@@ -36,6 +36,9 @@ const EnquiryById = (props) => {
   return (
     <>
       <Dialog open={dialogOpen}>
+      <div style={{backgroundColor: "blue",display : "flex",justifyContent : "end"}}>
+      <CloseIcon style={{top : 0,cursor : "pointer",color : "wheat"}}onClick={() => dialogClose(false)} />
+        </div>
         <DialogContent
           sx={{
             textAlign: "center",
@@ -44,8 +47,8 @@ const EnquiryById = (props) => {
             fontSize: "large",
           }}
         >
-          EnuiryById
-          <CloseIcon onClick={() => dialogClose(false)}/>
+          Enuiry By Id
+          
         </DialogContent>
         <Box flexDirection={"row"} alignSelf={"center"}>
           <FormControlLabel

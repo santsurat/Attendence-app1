@@ -10,7 +10,10 @@ const EnquiryByName = (props) =>{
   return(
     <>
     <Dialog open={dialogOpen} >
-      <DialogContent sx={{textAlign:'center',backgroundColor:'blue',color:'white',fontSize:'large'}} >SewaAttendenceForm <CloseIcon onClick={() => dialogClose(false)}/></DialogContent>
+    <div style={{backgroundColor: "blue",display : "flex",justifyContent : "end"}}>
+      <CloseIcon style={{top : 0,cursor : "pointer",color : "wheat"}}onClick={() => dialogClose(false)} />
+        </div>
+      <DialogContent sx={{textAlign:'center',backgroundColor:'blue',color:'white',fontSize:'large'}} >Sewa Attendence Form </DialogContent>
     <TextField sx={{marginLeft:5,marginRight:5,marginTop:2}} placeholder="Full Name"/>
     <TextField sx={{marginLeft:5,marginRight:5,marginTop:2}} placeholder="Father's Name"/>
   

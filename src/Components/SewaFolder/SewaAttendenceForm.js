@@ -10,9 +10,7 @@ import {
   Fab,
   FormControlLabel,
 } from "@mui/material";
-import CloseIcon from '@mui/icons-material/Close';
-
-
+import CloseIcon from "@mui/icons-material/Close";
 
 const SewaAttendenceForm = (props) => {
   const { dialogOpen, dialogClose } = props;
@@ -52,26 +50,38 @@ const SewaAttendenceForm = (props) => {
       changeText(textId);
     }
   };
-  
+
   const changeText = (textId) => {
     setSelectedText(textId);
   };
-  
+
   const resetText = () => {
     setSelectedText(null);
   };
-  
+
   const getTextStyle = (textId) => {
     const isSelected = selectedText === textId;
     return {
-      backgroundColor: isSelected ? '#2787d6' : 'white',
-      borderColor: isSelected ? '#2787d6' : 'black'
+      backgroundColor: isSelected ? "#2787d6" : "white",
+      borderColor: isSelected ? "#2787d6" : "black",
     };
   };
 
   return (
     <>
       <Dialog open={dialogOpen}>
+        <div
+          style={{
+            backgroundColor: "blue",
+            display: "flex",
+            justifyContent: "end",
+          }}
+        >
+          <CloseIcon
+            style={{ top: 0, cursor: "pointer", color: "wheat" }}
+            onClick={() => dialogClose(false)}
+          />
+        </div>
         <DialogContent
           sx={{
             textAlign: "center",
@@ -80,44 +90,45 @@ const SewaAttendenceForm = (props) => {
             fontSize: "large",
           }}
         >
-          SewaAttendenceForm
-          <CloseIcon  onClick={() => dialogClose(false)}/>
+          Sewa Attendence Form
         </DialogContent>
         <Box flexDirection={"row"} marginLeft={1.9}>
           <FormControlLabel
             control={<Checkbox checked={box1} onChange={handleCheckbox1} />}
             label="Branch No."
           />
-          <FormControlLabel sx={{marginLeft:1}}
+          <FormControlLabel
+            sx={{ marginLeft: 1 }}
             control={<Checkbox checked={box2} onChange={handleCheckbox2} />}
             label="UID"
           />
-          <FormControlLabel sx={{marginLeft:1.6}}
+          <FormControlLabel
+            sx={{ marginLeft: 1.6 }}
             control={<Checkbox checked={box3} onChange={handleCheckbox3} />}
             label="Manual"
           />
         </Box>
-        <Box display={'flex'} margin={1} gap={1}>
-        <Typography  onClick={() => handleTextClick('text1')} >
-        <Fab variant="extended" size="small"  style={getTextStyle('text1')}>
-          jigyasu
-        </Fab>
-        </Typography>
-        <Typography onClick={() => handleTextClick('text2')}>
-        <Fab variant="extended"  size="small" style={getTextStyle('text2')}>
-          Initiated
-        </Fab>
-        </Typography>
-        <Typography onClick={() => handleTextClick('text3')}>
-        <Fab variant="extended"  size="small" style={getTextStyle('text3')} >
-          Student
-        </Fab>
-        </Typography>
-        <Typography onClick={() => handleTextClick('text4')}>
-        <Fab variant="extended"  size="small" style={getTextStyle('text4')} >
-          Others
-        </Fab>
-        </Typography>
+        <Box display={"flex"} margin={1} gap={1}>
+          <Typography onClick={() => handleTextClick("text1")}>
+            <Fab variant="extended" size="small" style={getTextStyle("text1")}>
+              jigyasu
+            </Fab>
+          </Typography>
+          <Typography onClick={() => handleTextClick("text2")}>
+            <Fab variant="extended" size="small" style={getTextStyle("text2")}>
+              Initiated
+            </Fab>
+          </Typography>
+          <Typography onClick={() => handleTextClick("text3")}>
+            <Fab variant="extended" size="small" style={getTextStyle("text3")}>
+              Student
+            </Fab>
+          </Typography>
+          <Typography onClick={() => handleTextClick("text4")}>
+            <Fab variant="extended" size="small" style={getTextStyle("text4")}>
+              Others
+            </Fab>
+          </Typography>
         </Box>
         {box1 && (
           <TextField
@@ -146,34 +157,22 @@ const SewaAttendenceForm = (props) => {
               sx={{ marginLeft: 2, marginRight: 2, marginTop: 2 }}
               placeholder="Father's Name"
             />
-          
           </>
         )}
         <Button
           variant="contained"
-         
           sx={{ marginLeft: 2, marginRight: 2, marginTop: 2, marginBottom: 2 }}
         >
           Search
         </Button>
 
-        <Box  margin={4}>
-      <Typography>
-      Full Name :-
-      </Typography>
-      <Typography>
-      Father's Name : -
-      </Typography>
-      <Typography>
-      Branch Number : -
-      </Typography>
-      <Typography>
-      UID Number : -
-      </Typography>
-      <Typography>
-        Satsangi Type : - 
-      </Typography>
-    </Box>
+        <Box margin={4}>
+          <Typography>Full Name :-</Typography>
+          <Typography>Father's Name : -</Typography>
+          <Typography>Branch Number : -</Typography>
+          <Typography>UID Number : -</Typography>
+          <Typography>Satsangi Type : -</Typography>
+        </Box>
       </Dialog>
     </>
   );

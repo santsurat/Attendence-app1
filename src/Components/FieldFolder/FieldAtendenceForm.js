@@ -71,6 +71,9 @@ const FieldAttendenceForm = (props) => {
   return (
     <>
       <Dialog open={dialogOpen}>
+      <div style={{backgroundColor: "blue",display : "flex",justifyContent : "end"}}>
+      <CloseIcon style={{top : 0,cursor : "pointer",color : "wheat"}}onClick={() => dialogClose(false)} />
+        </div>
         <DialogContent
           sx={{
             textAlign: "center",
@@ -79,8 +82,8 @@ const FieldAttendenceForm = (props) => {
             fontSize: "large",
           }}
         >
-          FieldAttendenceForm
-          <CloseIcon   onClick={() => dialogClose(false)}/>
+          Field Attendence Form
+          
         </DialogContent>
         <Box flexDirection={"row"} marginLeft={1.9}>
           <FormControlLabel
