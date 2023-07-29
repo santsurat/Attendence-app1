@@ -69,7 +69,7 @@ const DashboardPage = () => {
       <div className="nav-items">
         <ul>
           <li>
-        <Link style={{textDecoration:'none'}} to="/"  >{<HomeIcon fontSize="large" titleAccess="Home" color="disabled"/>}</Link>
+        <Link style={{textDecoration:'none'}} to="/"  >{<HomeIcon fontSize="large" titleAccess="Home" color="disabled" />}</Link>
           </li>
         
           <li>

@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import { Box, Button, Checkbox, Dialog, DialogContent, TextField, Typography,} from "@mui/material";
+import CloseIcon from '@mui/icons-material/Close';
 
 const EnquiryByName = (props) =>{
   const {dialogOpen,dialogClose} = props;
@@ -7,11 +8,11 @@ const EnquiryByName = (props) =>{
   return(
     <>
     <Dialog open={dialogOpen} >
-      <DialogContent sx={{textAlign:'center',backgroundColor:'blue',color:'white',fontSize:'large'}} >BranchAttendenceForm</DialogContent>
+      <DialogContent sx={{textAlign:'center',backgroundColor:'blue',color:'white',fontSize:'large'}} >BranchAttendenceForm <CloseIcon onClick={() => dialogClose(false)}/></DialogContent>
     <TextField sx={{marginLeft:5,marginRight:5,marginTop:2}} placeholder="Full Name"/>
     <TextField sx={{marginLeft:5,marginRight:5,marginTop:2}} placeholder="Father's Name"/>
   
-    <Button variant="contained" onClick={() => dialogClose(false)} sx={{marginLeft:5,marginRight:5,marginTop:2,marginBottom:2}} >Search</Button>
+    <Button variant="contained"  sx={{marginLeft:5,marginRight:5,marginTop:2,marginBottom:2}} >Search</Button>
     <Box  margin={4}>
       <Typography>
       Full Name :-

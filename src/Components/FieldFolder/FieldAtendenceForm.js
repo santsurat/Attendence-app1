@@ -10,6 +10,8 @@ import {
   Fab,
   FormControlLabel,
 } from "@mui/material";
+import CloseIcon from '@mui/icons-material/Close';
+
 
 const FieldAttendenceForm = (props) => {
   const { dialogOpen, dialogClose } = props;
@@ -78,6 +80,7 @@ const FieldAttendenceForm = (props) => {
           }}
         >
           FieldAttendenceForm
+          <CloseIcon   onClick={() => dialogClose(false)}/>
         </DialogContent>
         <Box flexDirection={"row"} marginLeft={1.9}>
           <FormControlLabel
@@ -116,7 +119,6 @@ const FieldAttendenceForm = (props) => {
 
         <Button
           variant="contained"
-          onClick={() => dialogClose(false)}
           sx={{ marginLeft: 2, marginRight: 2, marginTop: 2, marginBottom: 2 }}
         >
           Search

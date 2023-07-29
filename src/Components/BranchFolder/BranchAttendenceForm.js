@@ -11,6 +11,8 @@ import {
   FormControlLabel,
 } from "@mui/material";
 import DateTimePicker from "../../DateTimePicker/DateTimePicker";
+import CloseIcon from '@mui/icons-material/Close';
+
 
 
 const BranchAttendenceForm = (props) => {
@@ -70,7 +72,7 @@ const BranchAttendenceForm = (props) => {
 
   return (
     <>
-      <Dialog open={dialogOpen}>
+      <Dialog open={dialogOpen} >
         <DialogContent
           sx={{
             textAlign: "center",
@@ -80,6 +82,7 @@ const BranchAttendenceForm = (props) => {
           }}
         >
           BranchAttendenceForm
+          <CloseIcon  onClick={() => dialogClose(false)}/>
         </DialogContent>
         <Box flexDirection={"row"} marginLeft={1.9}>
           <FormControlLabel
@@ -151,7 +154,6 @@ const BranchAttendenceForm = (props) => {
         )}
         <Button
           variant="contained"
-          onClick={() => dialogClose(false)}
           sx={{ marginLeft: 2, marginRight: 2, marginTop: 2, marginBottom: 2 }}
         >
           Search

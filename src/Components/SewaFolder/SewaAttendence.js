@@ -12,6 +12,7 @@ import Qrlogo from "../../assets/Image/animation_lkiczb4n_small.gif";
 import Countlogo from "../../assets/Image/animation_lkidnl82_small.gif";
 import Excellogo from "../../assets/Image/animation_lkidsnoj_small.gif";
 import { Box } from "@mui/material";
+import CloseIcon from '@mui/icons-material/Close';
 
 const SewaAttendence = () => {
   // const navigate = useNavigate();

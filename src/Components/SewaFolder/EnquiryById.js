@@ -9,6 +9,7 @@ import {
   Typography,
   FormControlLabel,
 } from "@mui/material";
+import CloseIcon from '@mui/icons-material/Close';
 
 const EnquiryById = (props) => {
   const { dialogOpen, dialogClose } = props;
@@ -43,6 +44,7 @@ const EnquiryById = (props) => {
           }}
         >
           EnuiryById
+          <CloseIcon onClick={() => dialogClose(false)}/>
         </DialogContent>
         <Box flexDirection={"row"} alignSelf={"center"}>
           <FormControlLabel
@@ -74,7 +76,7 @@ const EnquiryById = (props) => {
 
         <Button
           variant="contained"
-          onClick={() => dialogClose(false)}
+          
           sx={{ marginLeft: 2, marginRight: 2, marginTop: 2, marginBottom: 2 }}
         >
           Search
