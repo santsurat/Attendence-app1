@@ -56,9 +56,10 @@ const DashboardPage = () => {
     }
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElNav(false);
-    
+  const handleCloseUserMenu = (event, reason) => {
+    if(reason ==="backdropClick"){
+      setAnchorElUser(null);
+    }
   };
 
   return (
@@ -97,7 +98,7 @@ const DashboardPage = () => {
                 vertical: "top",
                 horizontal: "right",
               }}
-              open={Boolean(anchorElUser)}
+              open={anchorElUser}
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
