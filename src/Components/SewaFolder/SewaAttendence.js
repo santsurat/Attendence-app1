@@ -8,11 +8,11 @@ import DialogSewaAttendenceForm from "./SewaAttendenceForm";
 import Divider from "@mui/material/Divider";
 import eqnuiryLogo from "../../assets/Image/animation_lkicdlak_small.gif";
 import Attendencelogo from "../../assets/Image/animation_lkiclvxc_small.gif";
-import Qrlogo from "../../assets/Image/animation_lkiczb4n_small.gif";
+// import Qrlogo from "../../assets/Image/animation_lkiczb4n_small.gif";
 import Countlogo from "../../assets/Image/animation_lkidnl82_small.gif";
 import Excellogo from "../../assets/Image/animation_lkidsnoj_small.gif";
 import { Box } from "@mui/material";
-import CloseIcon from '@mui/icons-material/Close';
+// import CloseIcon from '@mui/icons-material/Close';
 
 const SewaAttendence = () => {
   // const navigate = useNavigate();
@@ -63,7 +63,7 @@ const SewaAttendence = () => {
               Mark Attendence
             </h4>
           </div>
-          <div className="markAttendence">
+          {/* <div className="markAttendence">
             <img
               style={{ height: "50%", width: "100%", borderRadius: "5px" }}
               src={Qrlogo}
@@ -73,7 +73,7 @@ const SewaAttendence = () => {
 
             <Divider sx={{ mt: 5 }} />
             <h4 className="btnforMark">Mark Attendence</h4>
-          </div>
+          </div> */}
           <div className="markAttendence">
             <img
               style={{ height: "50%", width: "100%", borderRadius: "5px" }}

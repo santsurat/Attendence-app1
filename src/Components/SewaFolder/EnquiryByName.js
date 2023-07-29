@@ -1,5 +1,5 @@
-import React,{useState} from "react";
-import { Box, Button, Checkbox, Dialog, DialogContent, TextField, Typography,} from "@mui/material";
+import React from "react";
+import { Box, Button, Dialog, DialogContent, TextField, Typography,} from "@mui/material";
 // import EnquiryByName from "../BranchFolder/EnquiryByName";
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -17,7 +17,7 @@ const EnquiryByName = (props) =>{
     <TextField sx={{marginLeft:5,marginRight:5,marginTop:2}} placeholder="Full Name"/>
     <TextField sx={{marginLeft:5,marginRight:5,marginTop:2}} placeholder="Father's Name"/>
   
-    <Button variant="contained"  sx={{marginLeft:5,marginRight:5,marginTop:2,marginBottom:2}} >Search</Button>
+    <Button variant="contained"  sx={{marginLeft:5,marginRight:5,marginTop:2,marginBottom:2}} >Submit</Button>
     <Box  margin={4}>
       <Typography>
       Full Name :-

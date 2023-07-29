@@ -152,6 +152,12 @@ const BranchAttendenceForm = (props) => {
             />
             <Box  ml={2} mt={2} alignSelf={'center'} >
            <DateTimePicker/>
+           {/* <Button
+          variant="contained"
+          sx={{ marginLeft: 2, marginRight: 2, marginTop: 2, marginBottom: 2 }}
+        >
+          Submit
+        </Button> */}
            </Box>
           </>
         )}

@@ -51,7 +51,7 @@ const EnquiryByName = (props) => {
           variant="contained"
           sx={{ marginLeft: 5, marginRight: 5, marginTop: 2, marginBottom: 2 }}
         >
-          Search
+          Submit
         </Button>
         <Box margin={4}>
           <Typography>Full Name :-</Typography>
