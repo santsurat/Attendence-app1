@@ -14,14 +14,10 @@ const AboutSection = () => {
 
         <h3>Meet the Team</h3>
         <div className="team-member">
-          <img src="team_member1.jpg" alt="Team Member 1 " />
+          <img  alt="Team Member 1 " />
           <h4>Uday Pratap Singh</h4>
-          <p>Co-Founder & CEO</p>
-        </div>
-        <div className="team-member">
-          <img src="team_member2.jpg" alt="Team Member 2 " />
-          <h4>SANT SURAT</h4>
-          <p>Product Manager</p>
+          <h4>Rohit Kumar</h4>
+          <h4>Sant Surat</h4>
         </div>
         {/* Add more team members as needed */}
       </div>
